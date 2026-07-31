@@ -6,7 +6,7 @@ from langchain_core.runnables import RunnableSequence
 
 # 1. 定义模型
 model = ChatOpenAI(
-    model="deepseek-chat",
+    model="deepseek-v4-flash",
     api_key=os.environ.get('DEEPSEEK_API_KEY'),
     base_url="https://api.deepseek.com",
     temperature = 2

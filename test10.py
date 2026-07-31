@@ -5,7 +5,7 @@ from langchain_tavily import TavilySearch
 from pydantic import BaseModel, Field
 
 model = ChatOpenAI(
-    model='deepseek-chat',
+    model='deepseek-v4-flash',
     api_key=os.environ.get('DEEPSEEK_API_KEY'),
     base_url="https://api.deepseek.com",
 )

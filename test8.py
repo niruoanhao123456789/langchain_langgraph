@@ -3,7 +3,7 @@ from typing import Optional, List, Union, TypedDict
 from langchain_deepseek import ChatDeepSeek
 from pydantic import BaseModel, Field
 
-model = ChatDeepSeek(model='deepseek-chat')
+model = ChatDeepSeek(model='deepseek-v4-flash')
 
 # 聊天模型提供的结构化输出能力
 

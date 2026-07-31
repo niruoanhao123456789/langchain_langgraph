@@ -3,7 +3,7 @@ from typing import Optional
 from pydantic import BaseModel, Field
 from langchain_core.messages import HumanMessage, SystemMessage
 
-model = ChatDeepSeek(model='deepseek-chat')
+model = ChatDeepSeek(model='deepseek-v4-flash')
 
 # 结构化输出常见使用场景：信息提取
 
