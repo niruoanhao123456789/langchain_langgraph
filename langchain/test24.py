@@ -42,7 +42,7 @@ documents = [
 
 # 文档加载器（MD）
 md_loader = UnstructuredMarkdownLoader(
-    "docs/markdown/脚手架级微服务租房平台Q&A.md",
+    "../docs/markdown/脚手架级微服务租房平台Q&A.md",
     # mode="single",    # MD 加载器默认将文档加载为一个
     mode="elements",    # 拆分成不同类型的子块
 )

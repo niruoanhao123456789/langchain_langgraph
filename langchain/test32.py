@@ -19,7 +19,7 @@ model = ChatDeepSeek(model="deepseek-v4-flash")
 # 向量库
 vector_store = InMemoryVectorStore(embedding=embeddings)
 
-loader = UnstructuredMarkdownLoader("docs/markdown/脚手架级微服务租房平台Q&A.md")
+loader = UnstructuredMarkdownLoader("../docs/markdown/脚手架级微服务租房平台Q&A.md")
 
 data = loader.load()
 

@@ -3,7 +3,7 @@ from langchain_text_splitters import CharacterTextSplitter, RecursiveCharacterTe
 
 # single 模式，只生成一个大文档
 # 即model 默认为 "single"
-loader = UnstructuredMarkdownLoader("docs/markdown/脚手架级微服务租房平台Q&A.md")
+loader = UnstructuredMarkdownLoader("../docs/markdown/脚手架级微服务租房平台Q&A.md")
 # Document列表
 data = loader.load()
 

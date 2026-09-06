@@ -12,7 +12,7 @@ vector_store = InMemoryVectorStore(embedding=embeddings)
 
 # 获取文档列表
 # single 模式，只生成一个大文档
-loader = UnstructuredMarkdownLoader("docs/markdown/脚手架级微服务租房平台Q&A.md")
+loader = UnstructuredMarkdownLoader("../docs/markdown/脚手架级微服务租房平台Q&A.md")
 # Document 列表
 data = loader.load()
 
