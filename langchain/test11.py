@@ -12,6 +12,7 @@ model = ChatOpenAI(
 # 非流式输出
 # print(model.invoke("写一篇关于薛定谔的猫的短篇故事，字数在100字以内"))
 
+# 同步流式输出
 # chunk: AIMessageChunk
 # 返回一个迭代器，产生的消息块
 # chunks = []
