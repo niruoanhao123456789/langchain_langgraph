@@ -2,23 +2,23 @@ from langchain_core.prompts import PromptTemplate, ChatPromptTemplate,MessagesPl
 from langchain_deepseek import ChatDeepSeek
 from langchain_core.messages import HumanMessage, AIMessage
 
-model = ChatDeepSeek(model = "deepseek-v4-flash")
+model = ChatDeepSeek(model = "deepseek-flash")
 
 # 定义文本提示词模板，Runnable 实例
 # 方式1
-# prompt_template = PromptTemplate(
+# prompt_template1 = PromptTemplate(
 #     template="介绍{city}的历史",
 #     input_variables=["city"]
 # )
-
-# 方式2
-# prompt_template = PromptTemplate.from_template("将文本从{language_from}翻译为{language_to}")
+#
+# # 方式2
+# prompt_template2 = PromptTemplate.from_template("将文本从{language_from}翻译为{language_to}")
 #
 # # 调用：实例化模板
-# print(prompt_template.invoke({"language_from": "英文", "language_to": "中文"}))
+# print(prompt_template2.invoke({"language_from": "英文", "language_to": "中文"}))
 
 
-# 处理聊天消息的模板
+# # 处理聊天消息的模板
 # chat_prompt_template = ChatPromptTemplate(
 #     [
 #         ("system", "将文本从{language_from}翻译为{language_to}"),
@@ -33,9 +33,9 @@ model = ChatDeepSeek(model = "deepseek-v4-flash")
 #         "text": "hi, what is your name?"
 #     }
 # )
-
+#
 # print(messages)
-# 实例化结果
+# #实例化结果
 # messages=[
 #     SystemMessage(
 #         content='将文本从英文翻译为中文',

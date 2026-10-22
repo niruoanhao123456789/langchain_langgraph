@@ -19,7 +19,7 @@ import os
 # 示例模板(文本)
 example_prompt = PromptTemplate.from_template("Input: {input}\nOutput: {output}")
 
-# # 示例选择器（长度）
+# 示例选择器（长度）
 # example_selector = LengthBasedExampleSelector(
 #     examples=examples,
 #     example_prompt=example_prompt,
@@ -55,7 +55,7 @@ example_prompt = PromptTemplate.from_template("Input: {input}\nOutput: {output}"
 #     suffix="Input: {adjective}\nOutput: ",
 #     input_variables=["adjective"],
 # )
-
+#
 # print(few_shot_prompt.invoke({"adjective": "big"}).to_messages()[0].content)
 
 

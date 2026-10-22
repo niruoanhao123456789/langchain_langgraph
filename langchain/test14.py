@@ -3,7 +3,7 @@ from langchain_core.messages import HumanMessage
 from langchain_core.runnables import RunnableWithMessageHistory
 from langchain_deepseek import ChatDeepSeek
 
-model = ChatDeepSeek(model = "deepseek-v4-flash")
+model = ChatDeepSeek(model = "deepseek-flash")
 
 store = {}
 # 根据会话 id 查询会话里的消息列表
